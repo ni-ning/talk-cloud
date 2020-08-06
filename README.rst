@@ -4,7 +4,6 @@ Talk-Cloud SDK for Python
 
 
 拓课云 Python SDK。
-`【阅读文档】 <https://exmail-sdk.readthedocs.io/zh_CN/latest/>`_。
 
 
 ********
