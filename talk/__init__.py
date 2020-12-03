@@ -4,6 +4,9 @@ from __future__ import absolute_import, unicode_literals
 
 import logging
 
+from talk.client import TalkClient
+from talk.core.exceptions import TalkClientException, TalkException
+
 
 __VERSION__ = '0.0.1'
 __AUTHOR__ = 'lightnning'
