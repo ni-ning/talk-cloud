@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 class TalkClient(BaseClient):
 
     room = api.Room()
+    file = api.File()
 
     def __init__(self, *args, **kwargs):
         super(TalkClient, self).__init__(*args, **kwargs)
