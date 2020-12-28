@@ -19,9 +19,12 @@ Talk-Cloud SDK for Python
 
 为了简化安装过程，推荐使用 pip 进行安装
 
-.. code-block:: bash
 
-    pip install talk-cloud
+.. code-block::
+
+    pip install -U talk-cloud
+
+
 
 升级 talk-cloud 到新版本::
 

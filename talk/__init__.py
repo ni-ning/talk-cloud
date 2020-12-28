@@ -9,7 +9,7 @@ from talk.core.exceptions import TalkClientException, TalkException
 
 
 __VERSION__ = '0.0.1'
-__AUTHOR__ = 'lightnning'
+__AUTHOR__ = 'ni-ning'
 
 
 # Set default logging handler to avoid "No handler found" warnings.

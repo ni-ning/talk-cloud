@@ -38,7 +38,7 @@ class BaseClient(object):
         self.auto_retry = auto_retry
 
     @staticmethod
-    def parse_params(url, params):
+    def parse_talk_params(url, params):
         if not isinstance(params, dict):
             return url
         ret = ['%s/%s' % (key, value) for key, value in params.items()]
@@ -55,7 +55,7 @@ class BaseClient(object):
 
         # 拓课云传递参数比较特别 /key1/value1/key2/value2/
         talk_params = kwargs.pop('talk_params') or {}
-        url = self.parse_params(url, talk_params)
+        url = self.parse_talk_params(url, talk_params)
 
         if isinstance(kwargs.get('data', ''), dict):
             body = json.dumps(kwargs['data'], ensure_ascii=False)
@@ -66,6 +66,7 @@ class BaseClient(object):
             kwargs['headers']['Content-Type'] = 'application/json'
 
         kwargs['timeout'] = kwargs.get('timeout', self.timeout)
+
         res = self._http.request(
             method=method,
             url=url,
